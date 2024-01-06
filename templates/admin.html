@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sailor Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v2.3.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo"><a href="index.html">electricity price prediction</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+
+        <ul>
+          <li><a href="/">Home</a></li>
+
+<!--          <li class="drop-down"><a href="#">About</a>-->
+<!--            <ul>-->
+<!--              <li><a href="about.html">About Us</a></li>-->
+<!--              <li><a href="team.html">Team</a></li>-->
+<!--              <li><a href="testimonials.html">Testimonials</a></li>-->
+
+<!--              <li class="drop-down"><a href="#">Deep Drop Down</a>-->
+<!--                <ul>-->
+<!--                  <li><a href="#">Deep Drop Down 1</a></li>-->
+<!--                  <li><a href="#">Deep Drop Down 2</a></li>-->
+<!--                  <li><a href="#">Deep Drop Down 3</a></li>-->
+<!--                  <li><a href="#">Deep Drop Down 4</a></li>-->
+<!--                  <li><a href="#">Deep Drop Down 5</a></li>-->
+<!--                </ul>-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!---->
+<!--          <li><a href="/load data">Load Data</a></li>-->
+<!--          <li><a href="/view data">view data</a></li>-->
+<!--          <li><a href="/model">Select Model</a></li>-->
+<!--          <li><a href="/prediction">Prediction</a></li>-->
+          <li><a href="/registration">Registration</a></li>
+            <li><a href="/login">Login</a></li>
+                        <li class="active"><a href="/Admin">Admin</a></li>
+
+
+
+        </ul>
+
+      </nav><!-- .nav-menu -->
+
+<!--      <a href="index.html" class="get-started-btn ml-auto">Get Started</a>-->
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+<!--      <div class="carousel-inner" role="listbox">-->
+                  <div class="carousel-item active" style="background-image: url(static/assets/img/slide/lightbulbs.jpeg)">
+          <div class="carousel-container">
+            <div class="container">
+                        {% block body %}
+                                {% if msg == "invalid"%}
+                      <h3 style="color:white;background:red"><i>"Provide valid credentials"</i></h3><br>
+<!--                                {% elif msg == "invalid" %}-->
+<!--                                    <h3 style="color:white;background:red">"Username already Exists"</h3>-->
+<!--                                {% elif msg == "mismatch"%}-->
+<!--                                    <h3 style="color:white;background:red">"Password Mismatched Enter Correct Password"</h3>-->
+                                {% endif %}
+                        {% endblock %}
+                      <h3 style="color:white">Login Details</h3><br>
+
+                      <form action = "{{url_for('admin')}}" method="post" >
+
+<!--                            <label style="color:white;width: 224px;height: 35px;">Select CSV Files</label>-->
+                                    <input type="text"name="name"placeholder="Enter Your Name"required><br><br>
+<!--                                    <input type="email"name="email"placeholder="Enter Your Email"required><br><br>-->
+                                    <input type="password"name="pwd"placeholder="Enter Password"required><br><br>
+<!--                                    <input type="password"name="cpwd"placeholder="Confirm Your Password"required><br><br>-->
+<!--                                    <input type="text"name="phno"placeholder="Enter Your Mobile Number"required><br><br>-->
+                                <input type="submit" value="submit"class="btn btn-info">
+
+
+                      </form>
+                </div>
+      </div>
+    </div>
+<!--      </div>-->
+    </div>
+  </section>
+
+
+
+
+
+
+          <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+          <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+          <script src="static/assets/vendor/php-email-form/validate.js"></script>
+          <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+          <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+          <script src="static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+          <script src="static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+          <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
